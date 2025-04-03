@@ -1,0 +1,23 @@
+@import url('style.css');
+/* termo.css */
+.terms {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--text-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms ol {
+    padding-left: 20px;
+  }

@@ -1,0 +1,44 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block  main%}
+    <main>
+        <section class="sugestao">
+            <div class="sugestao__titulo"><h1>Fale Conosco</h1></div>
+            <div class="sugestao__parag"><p>Para enviar sua solicitação, dúvida, sugestão ou elogios, por favor, preencha os campos abaixo:</p></div>
+            <form action=""></form>
+        </section>
+        <section class="formas">
+            <form action="/submit" method="post">
+                <label for="primeiroNome">Nome</label>
+                <input type="text" id="primeiroNome" name="primeiroNome" required>
+                
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome"> <br> <br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required> <br> <br>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" name="ddd" id="ddd" placeholder="(DDD)" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="Número do Telefone"> <br> <br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="" disable selected> Selecione o Assunto</option>
+                    <option value="pedido">Pedido</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select> <br> <br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" required></textarea> <br> <br>
+
+                    <div class="enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+            </form>
+        </section>
+    </main>
+{% endblock main%}

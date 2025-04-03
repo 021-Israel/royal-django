@@ -1,0 +1,44 @@
+@import url('style.css');
+/* fale_conosco.css */
+.sugestao {
+    margin: 1px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sugestao__titulo {
+    font-size: 25px;
+  }
+  
+  .sugestao__parag {
+    font-size: 16px;
+  }
+  
+  .formas {
+    justify-items: center;
+  }
+  
+  .formas .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formas textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .formas input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .enviar {
+    text-align: center;
+  }

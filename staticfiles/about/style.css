@@ -1,0 +1,44 @@
+@import url('style.css');
+/* about.css */
+.titu {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .about__text {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 20px;
+  }
+  
+  .about img {
+    height: 500px;
+  }
+  
+  /* Media Queries para Sobre Nós */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+    }
+    
+    .about img {
+      width: 80%;
+      height: auto;
+    }
+    
+    .about__text {
+      width: 100%;
+    }
+  }

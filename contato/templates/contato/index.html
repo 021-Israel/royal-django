@@ -1,0 +1,33 @@
+{% extends "global/base.html" %}
+{% load static %}
+{% block  main%}
+    <main>
+
+    </main>
+
+    <aside class="mapa">
+        <h1>Onde Estamos </h1>
+        <div class="mapa-conteudo"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8680223490546!2d-43.45192565264827!3d-22.754897702710057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967a99225f96f%3A0xec20bfc8ff090b46!2sSenac%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1740447429919!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <address>
+            Rua Cel. Carlos Matos, Centro, 86 <br>
+            Nova Iguaçu-RJ <br>
+            CEP:26210-200
+        </address>
+        </div>
+    </aside>
+    <hr>
+    <section class="contatos">
+        <div class="fique">
+            <h2>Contato</h2>
+            <strong>royal-multimarcas@gmail.com</strong>
+            <strong>
+                <p>(21)99999-0000</p>
+            </strong>
+        </div>
+    </section>
+{% endblock main%}
