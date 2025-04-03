@@ -1,0 +1,178 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: #003494;
+  --secondary-color: #0c1e45;
+  --accent-color: #fa0303;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --font-main: "Inter", sans-serif;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+/* Header */
+header {
+  display: flex;
+  font-size: 20px;
+  height: auto;
+  padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(147deg, var(--secondary-color), #0d1033);
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+header ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 0 20px;
+}
+
+.links {
+  display: flex;
+  color: #ad3a3a;
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ee0000;
+    padding: 0 20px;
+    transition: transform 1.0s ease, color 0.3s ease, rotate 1.0s ease;
+}
+
+.links a:hover {
+    transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
+    color: rgb(255, 255, 255);
+}
+
+/* Footer */
+.rodape {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pesquisa h2, .termo h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c26e00;
+}
+
+.pesquisa p {
+  font-size: 14px;
+  color: #ccc;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cadastro {
+  margin-top: 15px;
+}
+
+.cadastro form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  padding: 10px;
+  width: 250px;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn.btn-outline-success {
+  background-color: #fc2307;
+  color: white;
+  border: 2px solid red;
+  transition: 0.3s;
+}
+
+.btn.btn-outline-success:hover {
+  background-color: white;
+  color: #00c853;
+}
+
+.dados {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 15px;
+}
+
+.termo {
+  margin-top: 20px;
+}
+
+.termo a {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+
+.feedback {
+  padding: 25px;
+}
+
+.feedback a {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* Media Queries Globais */
+@media (max-width: 768px) {
+  header img {
+    width: 90px;
+    height: auto;
+  }
+  
+  .nav-menu ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav-menu ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .nav-menu ul li a {
+    font-size: 20px;
+    gap: 10px;
+  }
+}

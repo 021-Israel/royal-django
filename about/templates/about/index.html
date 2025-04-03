@@ -1,14 +1,17 @@
 {% extends "global/base.html" %}
-{% load static %}
+
 
 {% block main %}
+
+{% load static %}
+<link rel="stylesheet" href='{% static "css/about.css" %}'>
     <main>
         <h3 class="titu">Sobre Nós</h3>
 
         <section class="about">
             <!-- Imagem no topo -->
             <div class="img-left">
-                <img src="image/slides/sobre.jpg"  alt="Nosso-Trabalho">
+                <img src="{% static 'img/slides/sobre.jpg' %}"  alt="Nosso-Trabalho">
             </div>
             
             <!-- Texto abaixo da imagem -->

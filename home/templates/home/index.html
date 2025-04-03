@@ -1,6 +1,10 @@
 {% extends "global/base.html"%}
-{% load static %}
+
 {% block main %}
+
+{% load static %}
+<link rel="stylesheet" href='{% static "css/home.css" %}'>
+<link rel="stylesheet" href='{% static "css/produto.css" %}'>
 
 <body>
     
@@ -24,19 +28,19 @@
             <!--fim radio buttons-->
 
             <div class="slide first">
-                <img src="image/slides/camisa.jpg" alt="slide-camisa" />
+                <img src="{% static 'img/slides/camisa.jpg' %}" alt="slide-camisa" />
             </div>
             <div class="slide">
-                <img src="image/slides/calca.jpg" alt="slide-calça" />
+                <img src="{% static 'img/slides/calca.jpg' %}" alt="slide-calça" />
             </div>
             <div class="slide">
-                <img src="image/slides/shorts.jpg" alt="slide-short" />
+                <img src="{% static 'img/slides/shorts.jpg' %}" alt="slide-short" />
             </div>
             <div class="slide">
-                <img src="image/slides/time.jpg" alt="slide-time" />
+                <img src="{% static 'img/slides/time.jpg' %}" alt="slide-time" />
             </div>
             <div class="slide">
-                <img src="image/slides/conjunto.jpg" alt="slide-conjunto" />
+                <img src="{% static 'img/menu/shorts.jpgmg/slides/conjunto.jpg' %}" alt="slide-conjunto" />
             </div>
             <!--fim slide imagem-->
 
@@ -104,392 +108,392 @@
     </main>
     <aside>
        <!--Inicio do slide de camisas de times-->
-        <section class="time" id="time">
-            <div class="category">
-                <h2>Camisas de Time </h2>
-            
-                <!-- Carrossel 1 --> 
-                <div class="carousel-container">
-                <h4>Seleção Brasileira<br>2025/26 </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/times/time-Brasil/frente.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/times/time-Brasil/atras.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/times/time-Brasil/marca.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/times/time-Brasil/logo.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$399.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Seleção Brasileira', 399.99)">
-                <button class="prev" onclick="moveSlide(-1, 1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 1)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 2 -->
-                <div class="carousel-container">
-                <h4>Liverpool Football Club <br>2025/26</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/times/time-Liverpool/frente.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/times/time-Liverpool/atras.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/times/time-Liverpool/marca.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/times/time-Liverpool/logo.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$110.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Liverpool', 110.00)">
-                <button class="prev" onclick="moveSlide(-1, 2)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 2)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 3 -->
-                <div class="carousel-container">
-                <h4>Inter Miami CF <br>2025/26</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/times/time-Miami/frente.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/times/time-Miami/atras.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/times/time-Miami/marca.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/times/time-Miami/logo.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Inter Miami', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 3)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 3)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 4 -->
-                <div class="carousel-container">
-                <h4>Real Madrid Club de Fútbol <br>2025/26</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/times/time-Madrid/frente.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/times/time-Madrid/atras.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/times/time-Madrid/marca.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/times/time-Madrid/logo.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$450.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Real Madrid', 450.00)">
-                <button class="prev" onclick="moveSlide(-1, 4)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 4)">&#10095;</button>
-                </div>
-                <!-- Carrossel 5 -->
-                <div class="carousel-container">
-                <h4>Clube de Regatas do Flamengo <br>2025/26</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/times/time-Flamengo/frente.jpg" alt="Imagem 1"  width="300"></div>
-                    <div class="carousel-item"><img src="image/times/time-Flamengo/atras.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/times/time-Flamengo/marca.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/times/time-Flamengo/logo.jpg"alt="Imagem 4"></div>
-                </div>
-                <h3>R$359.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Flamengo', 359.99)">
-                <button class="prev" onclick="moveSlide(-1, 5)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 5)">&#10095;</button>
-            </div>
-        </section>   
-        <!--Fim do slide de camisas de times-->
-        <hr> 
-        <!--Inicio do slide de camisas-->
-       <section class="grife" id="grife">
-            <div class="category">
-                <h2>Camisas</h2>
-            
-                <!-- Carrossel 6 --> 
-                <div class="carousel-container">
-                <h4>Adidas</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/camisas/adidas/conjunto.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/camisas/adidas/branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/camisas/adidas/preto.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/camisas/adidas/amarelo.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$99.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Adidas', 99.99)">
-                <button class="prev" onclick="moveSlide(-1, 6)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 6)">&#10095;</button>
-                </div>
-                <!-- Carrossel 7 -->
-                <div class="carousel-container">
-                <h4>Nike</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/camisas/nk/conjunto.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/camisas/nk/branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/camisas/nk/preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$110.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Nike', 110.00)">
-                <button class="prev" onclick="moveSlide(-1, 7)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 7)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 8 -->
-                <div class="carousel-container">
-                <h4>Prada </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/camisas/prada/conjunto.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/camisas/prada/branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/camisas/prada/preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Prada', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 8)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 8)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 9 -->
-                <div class="carousel-container">
-                <h4>Lacoste </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/camisas/lacoste/conjunto.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/camisas/lacoste/branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/camisas/lacoste/preta.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/camisas/lacoste/pele.jpg" alt="Imagem 4"></div>
-                </div>
-                <h3>R$150.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Lacoste', 150.00)">
-                <button class="prev" onclick="moveSlide(-1, 9)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 9)">&#10095;</button>
-                </div>
-                <!-- Carrossel 10 -->
-                <div class="carousel-container">
-                <h4>Hugo-Boss </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/camisas/boss/Conjunto.jpeg" alt="Imagem 1"  width="300"></div>
-                    <div class="carousel-item"><img src="image/camisas/boss/branca.jpeg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/camisas/boss/preta.jpeg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/camisas/boss/ciano.jpeg"alt="Imagem 4"></div>
-                </div>
-                <h3>R$159.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Hugo-Boss', 159.99)">
-                <button class="prev" onclick="moveSlide(-1, 10)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 10)">&#10095;</button>
-            </div>
-        </section>   
-        <!--Fim do slide de camisas-->
-    <hr>
-        <!--Inicio do slide de casaco-->
-
-        <section class="casaco" id="casaco">
-            <div class="category">
-                <h2>Casacos </h2>
-            
-                <!-- Carrossel 11 --> 
-                <div class="carousel-container">
-                <h4>Adidas </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/casacos/casaco-Adidas/conj-casaco.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Adidas/casaco-branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Adidas/casaco-preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Adidas', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 11)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 11)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 12 -->
-                <div class="carousel-container">
-                <h4>Nike</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/casacos/casaco-Nk/conj-casaco.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Nk/casaco-preto.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Nk/casaco-verde.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$310.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Nike', 310.00)">
-                <button class="prev" onclick="moveSlide(-1, 12)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 12)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 13 -->
-                <div class="carousel-container">
-                <h4>Prada </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/casacos/casaco-Prada/conj-casaco.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Prada/casaco-branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Prada/casaco-preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Prada', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 13)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 13)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 14 -->
-                <div class="carousel-container">
-                <h4>Lacoste </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/casacos/casaco-Lacoste/conj-casaco.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Lacoste/casaco-branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Lacoste/casaco-preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$290.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('casaco Lacoste', 290.00)">
-                <button class="prev" onclick="moveSlide(-1, 14)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 14)">&#10095;</button>
-                </div>
-                <!-- Carrossel 15 -->
-                <div class="carousel-container">
-                <h4>Hugo-Boss </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/casacos/casaco-Boss/conj-casaco.jpg" alt="Imagem 1"  width="300"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Boss/casaco-preto.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Boss/casaco-cinza.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/casacos/casaco-Boss/casaco-marrom.jpg"alt="Imagem 4"></div>
-                </div>
-                <h3>R$229.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Casaco Hugo-Boss', 229.99)">
-                <button class="prev" onclick="moveSlide(-1, 15)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 15)">&#10095;</button>
-            </div>
-        </section>    
-       <!--Fim do slide de casacos-->
-        <hr>
-       <!--Inicio slide bermudas-->
-        <section class="bermudas" id="bermudas">
-            <div class="category">
-                <h2>Bermudas </h2>
-            
-                <!-- Carrossel 16 --> 
-                <div class="carousel-container">
-                <h4>Adidas </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/shorts/adidas/conj.jpg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/shorts/adidas/preto.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/shorts/adidas/bege.jpg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/shorts/adidas/verde.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Adidas', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 16)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 16)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 17 -->
-                <div class="carousel-container">
-                <h4>Nike</h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/shorts/nk/conj.jpeg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/shorts/nk/preto.jpeg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/shorts/nk/bege.jpeg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/shorts/nk/cinza.jpeg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$310.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Nike', 310.00)">
-                <button class="prev" onclick="moveSlide(-1, 17)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 17)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 18 -->
-                <div class="carousel-container">
-                <h4>Under Armour </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/shorts/armour/conj.jpeg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/shorts/armour/branco.jpeg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/shorts/armour/preto.jpeg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/shorts/armour/azul.jpeg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$299.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Under-Armour', 299.99)">
-                <button class="prev" onclick="moveSlide(-1, 18)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 18)">&#10095;</button>
-                </div>
-            
-                <!-- Carrossel 19 -->
-                <div class="carousel-container">
-                <h4>Puma </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/shorts/puma/conj.jpeg" alt="Imagem 1"></div>
-                    <div class="carousel-item"><img src="image/shorts/puma/creme.jpeg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/shorts/puma/preto.jpeg" alt="Imagem 3"></div>
-                    <div class="carousel-item"><img src="image/shorts/puma/azul.jpeg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$290.00</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Puma', 290.00)">
-                <button class="prev" onclick="moveSlide(-1, 19)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 19)">&#10095;</button>
-                </div>
-                <!-- Carrossel 20 -->
-                <div class="carousel-container">
-                <h4>Dolce & Gabbana </h4>
-                <div class="carousel">
-                    <div class="carousel-item"><img src="image/shorts/dg/conj.jpg" alt="Imagem 1"  width="300"></div>
-                    <div class="carousel-item"><img src="image/shorts/dg/branco.jpg" alt="Imagem 2"></div>
-                    <div class="carousel-item"><img src="image/shorts/dg/preto.jpg" alt="Imagem 3"></div>
-                </div>
-                <h3>R$229.99</h3>
-                <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Dolce & Gabbana', 229.99)">
-                <button class="prev" onclick="moveSlide(-1, 20)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1, 20)">&#10095;</button>
-            </div>
-           
-        </section>    
-        <!--Fim do slide de bermudas-->
-        <hr>
-<!-- Seção para os produtos -->
-<section class="tenis" id="tenis">
-    <div class="category">
-        <h2>Tênis</h2>
+       <section class="time" id="time">
+        <div class="category">
+            <h2>Camisas de Time </h2>
         
-        <!-- Carrossel 16 -->
-        <div class="carousel-container">
-            <h4>Adidas</h4>
+            <!-- Carrossel 1 --> 
+            <div class="carousel-container">
+            <h4>Seleção Brasileira<br>2025/26 </h4>
             <div class="carousel">
-                <div class="carousel-item"><img src="image/tenis/adidas/lado.jpg" alt="Imagem 1"></div>
-                <div class="carousel-item"><img src="image/tenis/adidas/frente.jpg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="image/tenis/adidas/tras.jpg" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Brasil/frente.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Brasil/atras.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Brasil/marca.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Brasil/logo.jpg' %}" alt="Imagem 4"></div>
             </div>
-            <h3>R$599.99</h3>
-            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Adidas Alphamagma', 599.99)">
-        </div>
-
-        <!-- Carrossel 17 -->
-        <div class="carousel-container">
-            <h4>Nike</h4>
-            <div class="carousel">
-                <div class="carousel-item"><img src="image/tenis/nk/lado.jpg" alt="Imagem 1"></div>
-                <div class="carousel-item"><img src="image/tenis/nk/frente.jpg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="image/tenis/nk/atras.jpg" alt="Imagem 3"></div>
+            <h3>R$399.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Seleção Brasileira', 399.99)">
+            <button class="prev" onclick="moveSlide(-1, 1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 1)">&#10095;</button>
             </div>
-            <h3>R$420.00</h3>
-            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Nike Dunk ', 420.00)">
-        </div>
-
-        <!-- Carrossel 18 -->
-        <div class="carousel-container">
-            <h4>New Balance</h4>
+        
+            <!-- Carrossel 2 -->
+            <div class="carousel-container">
+            <h4>Liverpool Football Club <br>2025/26</h4>
             <div class="carousel">
-                <div class="carousel-item"><img src="image/tenis/nb/lado.jpg" alt="Imagem 1"></div>
-                <div class="carousel-item"><img src="image/tenis/nb/frente.jpg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="image/tenis/nb/atras.jpg" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Liverpool/frente.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Liverpool/atras.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Liverpool/marca.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Liverpool/logo.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$110.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Liverpool', 110.00)">
+            <button class="prev" onclick="moveSlide(-1, 2)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 2)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 3 -->
+            <div class="carousel-container">
+            <h4>Inter Miami CF <br>2025/26</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/times/time-Miami/frente.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Miami/atras.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Miami/marca.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Miami/logo.jpg' %}" alt="Imagem 4"></div>
             </div>
             <h3>R$299.99</h3>
-            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis New Balance Vorax', 299.99)">
-        </div>
-        <!-- Carrossel 19 -->
-        <div class="carousel-container">
-            <h4>Vans</h4>
-            <div class="carousel">
-                <div class="carousel-item"><img src="image/tenis/vans/lado.jpg" alt="Imagem 1"></div>
-                <div class="carousel-item"><img src="image/tenis/vans/frente.jpg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="image/tenis/vans/atras.jpg" alt="Imagem 3"></div>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Inter Miami', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 3)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 3)">&#10095;</button>
             </div>
-            <h3>R$390.00</h3>
-            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Vans authentic', 390.00)">
-            <button class="prev" onclick="moveSlide(-1, 24)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1, 24)">&#10095;</button>
+        
+            <!-- Carrossel 4 -->
+            <div class="carousel-container">
+            <h4>Real Madrid Club de Fútbol <br>2025/26</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/times/time-Madrid/frente.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Madrid/atras.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Madrid/marca.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Madrid/logo.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$450.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Real Madrid', 450.00)">
+            <button class="prev" onclick="moveSlide(-1, 4)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 4)">&#10095;</button>
+            </div>
+            <!-- Carrossel 5 -->
+            <div class="carousel-container">
+            <h4>Clube de Regatas do Flamengo <br>2025/26</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/times/time-Flamengo/frente.jpg' %}" alt="Imagem 1"  width="300"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Flamengo/atras.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Flamengo/marca.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/times/time-Flamengo/logo.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$359.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa do Flamengo', 359.99)">
+            <button class="prev" onclick="moveSlide(-1, 5)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 5)">&#10095;</button>
+        </div>
+    </section>   
+    <!--Fim do slide de camisas de times-->
+    <hr> 
+    <!--Inicio do slide de camisas-->
+   <section class="grife" id="grife">
+        <div class="category">
+            <h2>Camisas</h2>
+        
+            <!-- Carrossel 6 --> 
+            <div class="carousel-container">
+            <h4>Adidas</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/camisas/adidas/conjunto.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/adidas/branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/adidas/preto.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/adidas/amarelo.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$99.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Adidas', 99.99)">
+            <button class="prev" onclick="moveSlide(-1, 6)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 6)">&#10095;</button>
+            </div>
+            <!-- Carrossel 7 -->
+            <div class="carousel-container">
+            <h4>Nike</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/camisas/nk/conjunto.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/nk/branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/nk/preto.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$110.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Nike', 110.00)">
+            <button class="prev" onclick="moveSlide(-1, 7)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 7)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 8 -->
+            <div class="carousel-container">
+            <h4>Prada </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/camisas/prada/conjunto.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/prada/branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/prada/preto.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$299.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Prada', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 8)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 8)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 9 -->
+            <div class="carousel-container">
+            <h4>Lacoste </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/camisas/lacoste/conjunto.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/lacoste/branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/lacoste/preta.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/lacoste/pele.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$150.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Lacoste', 150.00)">
+            <button class="prev" onclick="moveSlide(-1, 9)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 9)">&#10095;</button>
+            </div>
+            <!-- Carrossel 10 -->
+            <div class="carousel-container">
+            <h4>Hugo-Boss </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/camisas/boss/Conjunto.jpeg' %}" alt="Imagem 1"  width="300"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/boss/branca.jpeg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/boss/preta.jpeg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/camisas/boss/ciano.jpeg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$159.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Camisa da Hugo-Boss', 159.99)">
+            <button class="prev" onclick="moveSlide(-1, 10)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 10)">&#10095;</button>
+        </div>
+    </section>   
+    <!--Fim do slide de camisas-->
+<hr>
+    <!--Inicio do slide de casaco-->
+
+    <section class="casaco" id="casaco">
+        <div class="category">
+            <h2>Casacos </h2>
+        
+            <!-- Carrossel 11 --> 
+            <div class="carousel-container">
+            <h4>Adidas </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Adidas/conj-casaco.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Adidas/casaco-branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Adidas/casaco-preto.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$299.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Adidas', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 11)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 11)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 12 -->
+            <div class="carousel-container">
+            <h4>Nike</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Nk/conj-casaco.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Nk/casaco-preto.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Nk/casaco-verde.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$310.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Nike', 310.00)">
+            <button class="prev" onclick="moveSlide(-1, 12)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 12)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 13 -->
+            <div class="carousel-container">
+            <h4>Prada </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Prada/conj-casaco.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Prada/casaco-branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Prada/casaco-preto.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$299.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="aidcionarCarrinho('Casaco da Prada', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 13)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 13)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 14 -->
+            <div class="carousel-container">
+            <h4>Lacoste </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Lacoste/conj-casaco.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Lacoste/casaco-branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Lacoste/casaco-preto.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$290.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('casaco Lacoste', 290.00)">
+            <button class="prev" onclick="moveSlide(-1, 14)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 14)">&#10095;</button>
+            </div>
+            <!-- Carrossel 15 -->
+            <div class="carousel-container">
+            <h4>Hugo-Boss </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Boss/conj-casaco.jpg' %}" alt="Imagem 1"  width="300"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Boss/casaco-preto.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Boss/casaco-cinza.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/casacos/casaco-Boss/casaco-marrom.jpg' %}" alt="Imagem 4"></div>
+            </div>
+            <h3>R$229.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Casaco Hugo-Boss', 229.99)">
+            <button class="prev" onclick="moveSlide(-1, 15)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 15)">&#10095;</button>
+        </div>
+    </section>    
+   <!--Fim do slide de casacos-->
+    <hr>
+   <!--Inicio slide bermudas-->
+    <section class="bermudas" id="bermudas">
+        <div class="category">
+            <h2>Bermudas </h2>
+        
+            <!-- Carrossel 16 --> 
+            <div class="carousel-container">
+            <h4>Adidas </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/shorts/adidas/conj.jpg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/adidas/preto.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/adidas/bege.jpg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/adidas/verde.jpg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$299.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Adidas', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 16)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 16)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 17 -->
+            <div class="carousel-container">
+            <h4>Nike</h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/shorts/nk/conj.jpeg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/nk/preto.jpeg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/nk/bege.jpeg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/nk/cinza.jpeg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$310.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Nike', 310.00)">
+            <button class="prev" onclick="moveSlide(-1, 17)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 17)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 18 -->
+            <div class="carousel-container">
+            <h4>Under Armour </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/shorts/armour/conj.jpeg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/armour/branco.jpeg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/armour/preto.jpeg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/armour/azul.jpeg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$299.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Under-Armour', 299.99)">
+            <button class="prev" onclick="moveSlide(-1, 18)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 18)">&#10095;</button>
+            </div>
+        
+            <!-- Carrossel 19 -->
+            <div class="carousel-container">
+            <h4>Puma </h4>
+            <div class="carousel">
+                <div class="carousel-item"><img src="{% static 'img/shorts/puma/conj.jpeg' %}" alt="Imagem 1"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/puma/creme.jpeg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/puma/preto.jpeg' %}" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/puma/azul.jpeg' %}" alt="Imagem 3"></div>
+            </div>
+            <h3>R$290.00</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Puma', 290.00)">
+            <button class="prev" onclick="moveSlide(-1, 19)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 19)">&#10095;</button>
             </div>
             <!-- Carrossel 20 -->
             <div class="carousel-container">
-            <h4>Fila</h4>
+            <h4>Dolce & Gabbana </h4>
             <div class="carousel">
-                <div class="carousel-item"><img src="image/tenis/fila/lado.jpg" alt="Imagem 1"  width="300"></div>
-                <div class="carousel-item"><img src="image/tenis/fila/frente.jpg" alt="Imagem 2"></div>
-                <div class="carousel-item"><img src="image/tenis/fila/atras.jpg" alt="Imagem 3"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/dg/conj.jpg' %}" alt="Imagem 1"  width="300"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/dg/branco.jpg' %}" alt="Imagem 2"></div>
+                <div class="carousel-item"><img src="{% static 'img/shorts/dg/preto.jpg' %}" alt="Imagem 3"></div>
             </div>
-            <h3>R$799.99</h3>
-            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Fila Buffalo', 799.99)">
-            <button class="prev" onclick="moveSlide(-1, 25)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1, 25)">&#10095;</button>
+            <h3>R$229.99</h3>
+            <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Bermuda da Dolce & Gabbana', 229.99)">
+            <button class="prev" onclick="moveSlide(-1, 20)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 20)">&#10095;</button>
         </div>
+       
     </section>    
-    <!--Fim do slide de calças-->
+    <!--Fim do slide de bermudas-->
+    <hr>
+<!-- Seção para os produtos -->
+<section class="tenis" id="tenis">
+<div class="category">
+    <h2>Tênis</h2>
+    
+    <!-- Carrossel 16 -->
+    <div class="carousel-container">
+        <h4>Adidas</h4>
+        <div class="carousel">
+            <div class="carousel-item"><img src="{% static 'img/tenis/adidas/lado.jpg' %}" alt="Imagem 1"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/adidas/frente.jpg' %}" alt="Imagem 2"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/adidas/tras.jpg' %}" alt="Imagem 3"></div>
+        </div>
+        <h3>R$599.99</h3>
+        <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Adidas Alphamagma', 599.99)">
     </div>
+
+    <!-- Carrossel 17 -->
+    <div class="carousel-container">
+        <h4>Nike</h4>
+        <div class="carousel">
+            <div class="carousel-item"><img src="{% static 'img/tenis/nk/lado.jpg' %}" alt="Imagem 1"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/nk/frente.jpg' %}" alt="Imagem 2"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/nk/atras.jpg' %}" alt="Imagem 3"></div>
+        </div>
+        <h3>R$420.00</h3>
+        <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Nike Dunk ', 420.00)">
+    </div>
+
+    <!-- Carrossel 18 -->
+    <div class="carousel-container">
+        <h4>New Balance</h4>
+        <div class="carousel">
+            <div class="carousel-item"><img src="{% static 'img/tenis/nb/lado.jpg' %}" alt="Imagem 1"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/nb/frente.jpg' %}" alt="Imagem 2"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/nb/atras.jpg' %}" alt="Imagem 3"></div>
+        </div>
+        <h3>R$299.99</h3>
+        <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis New Balance Vorax', 299.99)">
+    </div>
+    <!-- Carrossel 19 -->
+    <div class="carousel-container">
+        <h4>Vans</h4>
+        <div class="carousel">
+            <div class="carousel-item"><img src="{% static 'img/tenis/vans/lado.jpg' %}" alt="Imagem 1"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/vans/frente.jpg' %}" alt="Imagem 2"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/vans/atras.jpg' %}" alt="Imagem 3"></div>
+        </div>
+        <h3>R$390.00</h3>
+        <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Vans authentic', 390.00)">
+        <button class="prev" onclick="moveSlide(-1, 24)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 24)">&#10095;</button>
+        </div>
+        <!-- Carrossel 20 -->
+        <div class="carousel-container">
+        <h4>Fila</h4>
+        <div class="carousel">
+            <div class="carousel-item"><img src="{% static 'img/tenis/fila/lado.jpg' %}" alt="Imagem 1"  width="300"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/fila/frente.jpg' %}" alt="Imagem 2"></div>
+            <div class="carousel-item"><img src="{% static 'img/tenis/fila/atras.jpg' %}" alt="Imagem 3"></div>
+        </div>
+        <h3>R$799.99</h3>
+        <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Fila Buffalo', 799.99)">
+        <button class="prev" onclick="moveSlide(-1, 25)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 25)">&#10095;</button>
+    </div>
+</section>    
+<!--Fim do slide de calças-->
+</div>
 </section>
 
 <!-- Carrinho -->
