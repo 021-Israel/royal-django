@@ -33,14 +33,23 @@ function exibirDados() {
 
 document.getElementById("cadastroForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Aqui você pode fazer qualquer validação de e-mail ou lógica adicional, se necessário.
+    let email = document.getElementById('correio').value;
+    
+    // Exibe o alerta de sucesso com SweetAlert2
     Swal.fire({
-        title: "Cadastro realizado com sucesso!",
-        icon: "success",
-        confirmButtonText: "OK"
+        title: 'Cadastro realizado com sucesso!',
+        text: 'E-mail cadastrado: ' + email,
+        icon: 'success',
+        confirmButtonText: 'OK'
     }).then(() => {
-        window.location.href = "index.html#dados";
+        // Aqui você pode limpar o formulário ou fazer outras ações
+        document.getElementById('cadastroForm').reset(); // Opcional: limpa o formulário
     });
 });
+
+
 
 
 
