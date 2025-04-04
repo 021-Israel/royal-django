@@ -6,7 +6,7 @@
 <link rel="stylesheet" href='{% static "css/home.css" %}'>
 <link rel="stylesheet" href='{% static "css/produto.css" %}'>
 
-<body>
+
     
     <section class="hero">
         <h1>Seu guarda-roupa pede uma atualização? A gente tem o que você precisa!</h1>
@@ -440,6 +440,8 @@
         </div>
         <h3>R$599.99</h3>
         <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Adidas Alphamagma', 599.99)">
+        <button class="prev" onclick="moveSlide(-1, 21)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 21)">&#10095;</button>
     </div>
 
     <!-- Carrossel 17 -->
@@ -452,6 +454,8 @@
         </div>
         <h3>R$420.00</h3>
         <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis Nike Dunk ', 420.00)">
+        <button class="prev" onclick="moveSlide(-1, 22)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 22)">&#10095;</button>
     </div>
 
     <!-- Carrossel 18 -->
@@ -464,6 +468,8 @@
         </div>
         <h3>R$299.99</h3>
         <input type="button" class="btn btn-outline-success" value="Adicionar ao Carrinho" onclick="adicionarCarrinho('Tênis New Balance Vorax', 299.99)">
+        <button class="prev" onclick="moveSlide(-1, 23)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 23)">&#10095;</button>
     </div>
     <!-- Carrossel 19 -->
     <div class="carousel-container">
@@ -507,12 +513,8 @@
 </section>
 
 
-
     </aside>
-    <br><br>
-    
 
-    
+<script src="{% static 'js/jwc.js' %}"></script>
 
-</body>
 {% endblock main %}

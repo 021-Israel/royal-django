@@ -7,4 +7,9 @@
 
 
 {% include "global/partials/footer.html" %} 
-{% include "global/partials/script.html" %}
+
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{% static 'js/newsletter.js' %}"></script>
+</body>
+</html>

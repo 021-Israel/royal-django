@@ -19,31 +19,6 @@ function nextImage(){
 }
 
 
-//formulário email do footer
-
-function exibirDados() {
-    //Captura os valores dos inputs
-    let email = document.getElementById('correio').value;
-
-    //Usando document.write para exibir os dados da página
-    document.write('<p><strong>E-mail:</strong> '+email + '</p>')
-}
-
-
-
-document.getElementById("cadastroForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    Swal.fire({
-        title: "Cadastro realizado com sucesso!",
-        icon: "success",
-        confirmButtonText: "OK"
-    }).then(() => {
-        window.location.href = "index.html#dados";
-    });
-});
-
-
-
 // Função para mover os slides
 function moveSlide(direction, carouselIndex) {
     var carousel = document.querySelectorAll('.carousel')[carouselIndex - 1]; // Seleciona o carrossel correto
@@ -81,9 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-
 
 
 let carrinho = [];
