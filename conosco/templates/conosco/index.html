@@ -13,7 +13,8 @@
             <form action=""></form>
         </section>
         <section class="formas">
-            <form action="/submit" method="post">
+            <form name="teste" method="post" action="{% url 'gravar' %}">
+                {% csrf_token %}
                 <label for="primeiroNome">Nome</label>
                 <input type="text" id="primeiroNome" name="primeiroNome" required>
                 
